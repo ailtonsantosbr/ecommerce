@@ -3,14 +3,14 @@
 require_once "vendor/autoload.php";
 
 use \Hcode\Page;
-use \Slim\Slim;
 use \Hcode\PageAdmin;
+use \Slim\Slim;
 
 $app = new Slim();
 
 $app->config('debug', true);
 
-$app->get('/', function() {
+$app->get('/', function () {
 
 	$page = new Page();
 
@@ -18,7 +18,7 @@ $app->get('/', function() {
 
 });
 
-$app->get('/admin', function() {
+$app->get('/admin/', function () {
 
 	$page = new PageAdmin();
 
